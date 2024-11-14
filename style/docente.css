@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    width: 100%;
+    margin: auto;
+    background: black;
+}
+
+.cabecera{
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+}
+
+#container{
+    width: 100%;
+
+}
+
+#container a{
+    text-decoration: none;
+    
+}
+#container p{
+    color: white;
+    font-size: 150%;
+    background: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px 0;
+    
+} 
+
+nav{
+    text-align: center;
+    background:rgb(0, 0, 0, 0.5);
+    width:100%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+  
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    display: block;
+}
+nav a:hover{
+    background: rgb(0, 0, 0, 0.5);
+    color: yellow;
+    transform: scale(1.1);
+    text-transform: var(1.1);
+    transition: 0.5s;
+  
+}
+nav li li{
+    display:flex;
+}
+nav ul ul{
+    display: none;
+}
+
+nav ul li:hover ul{
+  display:block;
+  background: rgb(0, 0, 0, 0.5);
+
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(../img/docente01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+
+
+}
+
+.cont-banner{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.cont-banner h2{
+    margin-bottom: 10px;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 20px 0px;
+    margin-bottom: 0;
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+    background: rgb(0, 0, 0, 0.5);
+    margin-top: 0;
+}
